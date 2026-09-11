@@ -1,0 +1,17 @@
+# Ultralytics YOLO dataset config for VisDrone → person-only conversion.
+#
+# Relative paths below are relative to `path`.
+# When launching training from Colab, prefer generating an absolute-path
+# copy of this YAML at runtime (see notebooks/colab/02_train_person_detector.ipynb)
+# so Ultralytics resolves images correctly regardless of the process CWD.
+#
+# IMPORTANT: VisDrone is used ONLY for person detection.
+# It does NOT provide our_team / known_friendly / unknown labels.
+
+path: data/processed/visdrone_person
+train: images/train
+val: images/val
+test: images/test
+
+names:
+  0: person

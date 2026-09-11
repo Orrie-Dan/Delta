@@ -1,0 +1,22 @@
+# Uniform Detection — MVP dependencies
+# Python 3.11+ required
+#
+# ALL model training is intended for Google Colab.
+# Prefer installing a CUDA-enabled torch/torchvision build from
+# https://pytorch.org/get-started/locally/ only if you need local GPU inference.
+
+torch
+torchvision
+ultralytics
+opencv-python
+numpy
+pandas
+scikit-learn
+matplotlib
+albumentations
+Pillow
+PyYAML
+tqdm
+
+# Dev / tests
+pytest

@@ -1,0 +1,189 @@
+{
+  "dataset": "D:\\Side Projects\\Delta\\uniform-detection\\_tmp_visdrone_out",
+  "small_box_area_threshold": 0.001,
+  "totals": {
+    "num_images": 3,
+    "num_label_files": 3,
+    "total_person_boxes": 4,
+    "images_with_zero_boxes": 1,
+    "very_small_bounding_boxes": 0,
+    "malformed_annotation_lines": 0,
+    "invalid_bounding_boxes": 0
+  },
+  "splits": {
+    "train": {
+      "split": "train",
+      "num_images": 1,
+      "num_label_files": 1,
+      "total_person_boxes": 2,
+      "avg_boxes_per_image": 2.0,
+      "images_with_zero_boxes": 0,
+      "missing_label_files": [],
+      "missing_image_files": [],
+      "malformed_annotation_lines": 0,
+      "invalid_bounding_boxes": 0,
+      "very_small_bounding_boxes": 0,
+      "bbox_width_stats": {
+        "count": 2,
+        "min": 0.075,
+        "max": 0.1,
+        "mean": 0.0875,
+        "median": 0.0875,
+        "p05": 0.07625,
+        "p95": 0.09875
+      },
+      "bbox_height_stats": {
+        "count": 2,
+        "min": 0.25,
+        "max": 0.3,
+        "mean": 0.275,
+        "median": 0.275,
+        "p05": 0.2525,
+        "p95": 0.2975
+      },
+      "bbox_area_stats": {
+        "count": 2,
+        "min": 0.01875,
+        "max": 0.03,
+        "mean": 0.024375,
+        "median": 0.024375,
+        "p05": 0.0193125,
+        "p95": 0.0294375
+      },
+      "image_width_stats": {
+        "count": 1,
+        "min": 200.0,
+        "max": 200.0,
+        "mean": 200.0,
+        "median": 200.0,
+        "p05": 200.0,
+        "p95": 200.0
+      },
+      "image_height_stats": {
+        "count": 1,
+        "min": 100.0,
+        "max": 100.0,
+        "mean": 100.0,
+        "median": 100.0,
+        "p05": 100.0,
+        "p95": 100.0
+      }
+    },
+    "val": {
+      "split": "val",
+      "num_images": 1,
+      "num_label_files": 1,
+      "total_person_boxes": 2,
+      "avg_boxes_per_image": 2.0,
+      "images_with_zero_boxes": 0,
+      "missing_label_files": [],
+      "missing_image_files": [],
+      "malformed_annotation_lines": 0,
+      "invalid_bounding_boxes": 0,
+      "very_small_bounding_boxes": 0,
+      "bbox_width_stats": {
+        "count": 2,
+        "min": 0.075,
+        "max": 0.1,
+        "mean": 0.0875,
+        "median": 0.0875,
+        "p05": 0.07625,
+        "p95": 0.09875
+      },
+      "bbox_height_stats": {
+        "count": 2,
+        "min": 0.25,
+        "max": 0.3,
+        "mean": 0.275,
+        "median": 0.275,
+        "p05": 0.2525,
+        "p95": 0.2975
+      },
+      "bbox_area_stats": {
+        "count": 2,
+        "min": 0.01875,
+        "max": 0.03,
+        "mean": 0.024375,
+        "median": 0.024375,
+        "p05": 0.0193125,
+        "p95": 0.0294375
+      },
+      "image_width_stats": {
+        "count": 1,
+        "min": 200.0,
+        "max": 200.0,
+        "mean": 200.0,
+        "median": 200.0,
+        "p05": 200.0,
+        "p95": 200.0
+      },
+      "image_height_stats": {
+        "count": 1,
+        "min": 100.0,
+        "max": 100.0,
+        "mean": 100.0,
+        "median": 100.0,
+        "p05": 100.0,
+        "p95": 100.0
+      }
+    },
+    "test": {
+      "split": "test",
+      "num_images": 1,
+      "num_label_files": 1,
+      "total_person_boxes": 0,
+      "avg_boxes_per_image": 0.0,
+      "images_with_zero_boxes": 1,
+      "missing_label_files": [],
+      "missing_image_files": [],
+      "malformed_annotation_lines": 0,
+      "invalid_bounding_boxes": 0,
+      "very_small_bounding_boxes": 0,
+      "bbox_width_stats": {
+        "count": 0,
+        "min": 0.0,
+        "max": 0.0,
+        "mean": 0.0,
+        "median": 0.0,
+        "p05": 0.0,
+        "p95": 0.0
+      },
+      "bbox_height_stats": {
+        "count": 0,
+        "min": 0.0,
+        "max": 0.0,
+        "mean": 0.0,
+        "median": 0.0,
+        "p05": 0.0,
+        "p95": 0.0
+      },
+      "bbox_area_stats": {
+        "count": 0,
+        "min": 0.0,
+        "max": 0.0,
+        "mean": 0.0,
+        "median": 0.0,
+        "p05": 0.0,
+        "p95": 0.0
+      },
+      "image_width_stats": {
+        "count": 1,
+        "min": 200.0,
+        "max": 200.0,
+        "mean": 200.0,
+        "median": 200.0,
+        "p05": 200.0,
+        "p95": 200.0
+      },
+      "image_height_stats": {
+        "count": 1,
+        "min": 100.0,
+        "max": 100.0,
+        "mean": 100.0,
+        "median": 100.0,
+        "p05": 100.0,
+        "p95": 100.0
+      }
+    }
+  }
+}

@@ -1,0 +1,10 @@
+# Placeholder uniform recognition config (MVP-00) — not used for training yet
+image_size: 224
+batch_size: 32
+epochs: 20
+learning_rate: 0.001
+num_classes: 3
+classes:
+  - our_team
+  - known_friendly
+  - unknown

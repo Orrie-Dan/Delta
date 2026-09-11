@@ -1,0 +1,6 @@
+# Placeholder person detector config (MVP-00) — not used for training yet
+task: detect
+class_name: person
+image_size: 640
+epochs: 50
+batch_size: 16

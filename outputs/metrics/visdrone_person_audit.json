@@ -1,0 +1,189 @@
+{
+  "dataset": "D:\\Side Projects\\Delta\\uniform-detection\\data\\processed\\visdrone_person",
+  "small_box_area_threshold": 0.001,
+  "totals": {
+    "num_images": 7019,
+    "num_label_files": 7019,
+    "total_person_boxes": 120365,
+    "images_with_zero_boxes": 804,
+    "very_small_bounding_boxes": 107422,
+    "malformed_annotation_lines": 0,
+    "invalid_bounding_boxes": 0
+  },
+  "splits": {
+    "train": {
+      "split": "train",
+      "num_images": 6471,
+      "num_label_files": 6471,
+      "total_person_boxes": 106396,
+      "avg_boxes_per_image": 16.441971874517076,
+      "images_with_zero_boxes": 787,
+      "missing_label_files": [],
+      "missing_image_files": [],
+      "malformed_annotation_lines": 0,
+      "invalid_bounding_boxes": 0,
+      "very_small_bounding_boxes": 95312,
+      "bbox_width_stats": {
+        "count": 106396,
+        "min": 0.001,
+        "max": 0.162857,
+        "mean": 0.010818722339185684,
+        "median": 0.008571,
+        "p05": 0.002941,
+        "p95": 0.025735
+      },
+      "bbox_height_stats": {
+        "count": 106396,
+        "min": 0.000928,
+        "max": 0.419608,
+        "mean": 0.030246285584044515,
+        "median": 0.025,
+        "p05": 0.008571,
+        "p95": 0.069281
+      },
+      "bbox_area_stats": {
+        "count": 106396,
+        "min": 1.453248e-06,
+        "max": 0.049435272755,
+        "mean": 0.0004457364965930392,
+        "median": 0.000217690068,
+        "p05": 2.9929932e-05,
+        "p95": 0.001564617483
+      },
+      "image_width_stats": {
+        "count": 6471,
+        "min": 480.0,
+        "max": 2000.0,
+        "mean": 1519.8895070313708,
+        "median": 1400.0,
+        "p05": 1360.0,
+        "p95": 2000.0
+      },
+      "image_height_stats": {
+        "count": 6471,
+        "min": 360.0,
+        "max": 1500.0,
+        "mean": 1002.3970020089631,
+        "median": 1050.0,
+        "p05": 765.0,
+        "p95": 1500.0
+      }
+    },
+    "val": {
+      "split": "val",
+      "num_images": 548,
+      "num_label_files": 548,
+      "total_person_boxes": 13969,
+      "avg_boxes_per_image": 25.490875912408757,
+      "images_with_zero_boxes": 17,
+      "missing_label_files": [],
+      "missing_image_files": [],
+      "malformed_annotation_lines": 0,
+      "invalid_bounding_boxes": 0,
+      "very_small_bounding_boxes": 12110,
+      "bbox_width_stats": {
+        "count": 13969,
+        "min": 0.001471,
+        "max": 0.115441,
+        "mean": 0.010712244255136373,
+        "median": 0.008824,
+        "p05": 0.0036759999999999996,
+        "p95": 0.023529
+      },
+      "bbox_height_stats": {
+        "count": 13969,
+        "min": 0.003922,
+        "max": 0.503268,
+        "mean": 0.03933783577922543,
+        "median": 0.034259,
+        "p05": 0.013072,
+        "p95": 0.078431
+      },
+      "bbox_area_stats": {
+        "count": 13969,
+        "min": 5.769262e-06,
+        "max": 0.05587734277200001,
+        "mean": 0.0005567017619420144,
+        "median": 0.00030758415999999997,
+        "p05": 5.4016821e-05,
+        "p95": 0.0016951168223999983
+      },
+      "image_width_stats": {
+        "count": 548,
+        "min": 960.0,
+        "max": 1920.0,
+        "mean": 1291.094890510949,
+        "median": 1360.0,
+        "p05": 960.0,
+        "p95": 1360.0
+      },
+      "image_height_stats": {
+        "count": 548,
+        "min": 540.0,
+        "max": 1080.0,
+        "mean": 726.2408759124088,
+        "median": 765.0,
+        "p05": 540.0,
+        "p95": 765.0
+      }
+    },
+    "test": {
+      "split": "test",
+      "num_images": 0,
+      "num_label_files": 0,
+      "total_person_boxes": 0,
+      "avg_boxes_per_image": 0.0,
+      "images_with_zero_boxes": 0,
+      "missing_label_files": [],
+      "missing_image_files": [],
+      "malformed_annotation_lines": 0,
+      "invalid_bounding_boxes": 0,
+      "very_small_bounding_boxes": 0,
+      "bbox_width_stats": {
+        "count": 0,
+        "min": 0.0,
+        "max": 0.0,
+        "mean": 0.0,
+        "median": 0.0,
+        "p05": 0.0,
+        "p95": 0.0
+      },
+      "bbox_height_stats": {
+        "count": 0,
+        "min": 0.0,
+        "max": 0.0,
+        "mean": 0.0,
+        "median": 0.0,
+        "p05": 0.0,
+        "p95": 0.0
+      },
+      "bbox_area_stats": {
+        "count": 0,
+        "min": 0.0,
+        "max": 0.0,
+        "mean": 0.0,
+        "median": 0.0,
+        "p05": 0.0,
+        "p95": 0.0
+      },
+      "image_width_stats": {
+        "count": 0,
+        "min": 0.0,
+        "max": 0.0,
+        "mean": 0.0,
+        "median": 0.0,
+        "p05": 0.0,
+        "p95": 0.0
+      },
+      "image_height_stats": {
+        "count": 0,
+        "min": 0.0,
+        "max": 0.0,
+        "mean": 0.0,
+        "median": 0.0,
+        "p05": 0.0,
+        "p95": 0.0
+      }
+    }
+  }
+}
