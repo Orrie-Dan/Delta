@@ -15,6 +15,7 @@ Step-by-step process docs live in [`docs/`](docs/README.md):
 | [Architecture decisions](docs/04_architecture_decisions.md) | Why the design looks this way |
 | [Step checklist](docs/05_step_checklist.md) | Tick-off runbook |
 | [MVP-02 baseline](docs/06_mvp02_person_detector_baseline.md) | YOLO26n Colab training |
+| [MVP-03 inference API](docs/07_mvp03_person_detection_api.md) | Mixed YOLO26s FastAPI deploy |
 
 ## Problem statement
 
@@ -51,18 +52,33 @@ Do **not** train YOLO or the uniform CNN locally as part of the standard workflo
 
 ## Current status
 
-**MVP-02 — Person detector baseline (READY FOR COLAB TRAINING)**
+**MVP-03 — Person detection inference API (mixed YOLO26s)**
 
-MVP-01 person-only VisDrone conversion is complete (~7,019 images / ~120k person boxes).  
-MVP-02 delivers the Colab training notebook + evaluation helpers for a **YOLO26n** baseline.  
-**MVP-02 is not COMPLETE until you train on Colab and inspect real metrics.**
+Deployable FastAPI service + tracked checkpoint for image inference (local / free-CPU hosting evaluation).  
+Live camera streaming is **not** included yet.
+
+Also present: MVP-02 Colab baseline scaffold (YOLO26n VisDrone-only) for training experiments.
 
 | Included | Not included yet |
 | --- | --- |
-| MVP-00 / MVP-01 data prep | Local YOLO training |
-| Colab notebook `02` fully wired for baseline | Uniform classification / ResNet |
-| Small-object size-bin recall helpers | Tracking, phone streaming, drone |
-| Checkpoint + metrics persistence design | Multi-model comparison / tuning |
+| MVP-00 / MVP-01 data prep | Uniform classification / ResNet |
+| Colab notebook `02` baseline scaffold | Tracking / multi-model tuning |
+| Mixed YOLO26s deploy checkpoint + `/detect` API | Live camera / streaming endpoints |
+
+## MVP-03 — Person detection API (quick start)
+
+Checkpoint: `models/detector/yolo26s_1280_mixed_v1.pt` (**YOLO26s**, `imgsz=1280`, VisDrone + Caltech).
+
+```powershell
+pip install -r api/requirements.txt
+uvicorn api.app:app --host 0.0.0.0 --port 8000
+```
+
+- Health: `GET http://127.0.0.1:8000/health`
+- Docs: `http://127.0.0.1:8000/docs`
+- Detect: `POST /detect` with multipart form field `file`
+
+Details: [`docs/07_mvp03_person_detection_api.md`](docs/07_mvp03_person_detection_api.md).
 
 ## MVP-02 — Person Detector Baseline
 
@@ -270,8 +286,9 @@ python main.py
 | `data/raw/visdrone/` | Official VisDrone DET extract (gitignored contents) |
 | `data/processed/visdrone_person/` | YOLO person-only images/labels |
 | `data/classification/` | Future uniform crops: `our_team` / `known_friendly` / `unknown` |
-| `models/detector/` | Saved person-detector weights (from Colab) |
+| `models/detector/` | Person-detector weights; MVP deploy checkpoint is tracked |
 | `models/classifier/` | Future uniform-recognition weights |
+| `api/` | FastAPI person-detection inference service |
 | `notebooks/colab/` | Colab preparation and training scaffolds |
 | `src/data/` | VisDrone parse/convert/audit/visualize |
 | `src/utils/paths.py` | Portable project-root helpers |
@@ -279,4 +296,4 @@ python main.py
 | `outputs/metrics/` | Audit JSON (and later training metrics) |
 | `outputs/visualizations/` | Drawn annotation previews |
 
-Empty data/model/output directories are kept in git via `.gitkeep` files; raw/processed VisDrone media and weights are ignored.
+Empty data/model/output directories are kept in git via `.gitkeep` files; raw/processed VisDrone media and non-deploy weights are ignored.

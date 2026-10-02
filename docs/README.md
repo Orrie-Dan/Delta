@@ -13,5 +13,6 @@ Read in order if you are new to the project:
 | [04 — Architecture decisions](04_architecture_decisions.md) | Why folders, classes, tools, and splits look this way |
 | [05 — Step checklist](05_step_checklist.md) | Ordered checklist you can tick off |
 | [06 — MVP-02 person detector baseline](06_mvp02_person_detector_baseline.md) | YOLO26n Colab baseline (ready to train) |
+| [07 — MVP-03 person detection API](07_mvp03_person_detection_api.md) | Mixed YOLO26s FastAPI inference deploy |
 
 The root [README.md](../README.md) stays a short project entry point. Detailed process lives here.

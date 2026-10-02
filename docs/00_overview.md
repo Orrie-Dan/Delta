@@ -40,8 +40,9 @@ Mixing these early would force one model to solve two different problems with in
 | --- | --- | --- |
 | **MVP-00** | Project/environment setup | Done |
 | **MVP-01** | VisDrone → YOLO person dataset + audit + Colab scaffolds | Done (real data converted) |
-| **MVP-02** | YOLO26n person-detector baseline in Colab | **READY FOR COLAB TRAINING** |
-| Later | Uniform dataset, classifier, pipeline, tracking | Not started |
+| **MVP-02** | YOLO26n person-detector baseline in Colab | READY FOR COLAB TRAINING |
+| **MVP-03** | Mixed YOLO26s FastAPI inference API + deploy checkpoint | **In progress (API integrated)** |
+| Later | Uniform dataset, classifier, pipeline, live streaming | Not started |
 
 ## Hard constraints (do not violate casually)
 

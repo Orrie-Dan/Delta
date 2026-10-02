@@ -18,5 +18,10 @@ Pillow
 PyYAML
 tqdm
 
+# Inference API (see also api/requirements.txt for a lean deploy install)
+fastapi
+uvicorn[standard]
+python-multipart
+
 # Dev / tests
 pytest

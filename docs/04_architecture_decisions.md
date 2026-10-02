@@ -89,3 +89,19 @@ Short decision log for choices already baked into the repo.
 **What:** `.gitignore` drops VisDrone media, processed images/labels, `*.pt`, viz dumps; keeps `.gitkeep` and allows small `outputs/metrics/*.json`.  
 **Why:** Repo stays cloneable; metrics JSON is useful documentation of a run.  
 **How:** See `.gitignore` VisDrone / metrics / visualizations sections.
+
+---
+
+## AD-12 — One tracked deployment checkpoint
+
+**What:** Exception for `models/detector/yolo26s_1280_mixed_v1.pt` (~20 MB); all other weights remain ignored. No Git LFS.  
+**Why:** MVP needs a clone-and-run inference API for local/cloud CPU hosting without Drive/Lightning paths. One small named artifact is enough; training dumps stay out of git.  
+**How:** Negating gitignore rule + `api/app.py` resolves the path from the repo root via `Path(__file__)`.
+
+---
+
+## AD-13 — Inference API under `api/`, weights under `models/detector/`
+
+**What:** FastAPI lives in `api/`; checkpoint stays in the existing `models/detector/` convention (not a nested `person-detection-api/` tree).  
+**Why:** Matches documented folder roles; Frontend already expects `/health` + `/detect`; avoids duplicating a standalone package layout.  
+**How:** `uvicorn api.app:app` from repo root; lean deps in `api/requirements.txt`.
