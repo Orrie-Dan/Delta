@@ -88,5 +88,5 @@ Response shape:
 
 - Cold start loads the ~20 MB checkpoint once; first request may be slower than warm inference.
 - `imgsz=1280` is accurate but heavier on CPU — measure latency on the target host before promising live FPS.
-- CORS currently allows all origins (`*`) for MVP only; tighten before production.
+- CORS allows local Vite (`localhost` / `127.0.0.1` ports 5173 & 4173) and `https://*.onrender.com`.
 - Do not commit datasets, training `runs/`, or extra `.pt` files; only this named deployment checkpoint is intentionally tracked.
