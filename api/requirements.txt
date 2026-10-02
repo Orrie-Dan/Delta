@@ -1,11 +1,13 @@
-# Lean dependencies for the person-detection inference API only.
+# Lean dependencies for the person-detection ONNX Runtime API only.
 # Install from repository root:
 #   pip install -r api/requirements.txt
 #
-# Full project tooling (tests, data prep, etc.) uses ../requirements.txt.
+# Full project tooling (training, tests, data prep, etc.) uses ../requirements.txt.
+# Do NOT add ultralytics, torch, torchvision, or opencv packages here.
 
 fastapi
 uvicorn[standard]
-ultralytics==8.4.166
+onnxruntime
+numpy
 pillow
 python-multipart
