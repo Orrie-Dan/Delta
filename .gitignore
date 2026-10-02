@@ -63,8 +63,9 @@ ipython_config.py
 # Keep package directories, ignore weight files inside them
 models/detector/*
 !models/detector/.gitkeep
-# MVP deployable person detector (~20 MB). Training runs stay ignored.
+# MVP deployable person detector. Training runs stay ignored.
 !models/detector/yolo26s_1280_mixed_v1.pt
+!models/detector/yolo26s_1280_mixed_v1.onnx
 models/classifier/*
 !models/classifier/.gitkeep
 
